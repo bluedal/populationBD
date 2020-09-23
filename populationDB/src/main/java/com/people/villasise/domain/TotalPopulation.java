@@ -11,7 +11,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-@Table(name="nia_total_population_dev")
+@Table(name="nia_total_population")
 @Entity
 @Data
 @IdClass(TotalPopulationPK.class)

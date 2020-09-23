@@ -1,5 +1,4 @@
-#로컬 DB 연결 프로파일
-pripertiyTest: test
+#개발 DB
 spring.profiles: win-dev
 spring:
   
@@ -13,3 +12,17 @@ spring:
       password: kncom1203!
       driver-class-name: com.mysql.cj.jdbc.Driver
 
+---
+#운영 DB
+spring.profiles: real
+spring:
+  
+  jpa:
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernate:
+          ddl-auto: none
+  datasource:
+      url: jdbc:mysql://nia.c0gqj5ketijm.ap-northeast-2.rds.amazonaws.com:3306/lobig?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=yes&characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: knc!Q@W#E
+      driver-class-name: com.mysql.cj.jdbc.Driver

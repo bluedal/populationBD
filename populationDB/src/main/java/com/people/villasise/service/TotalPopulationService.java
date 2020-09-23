@@ -27,8 +27,8 @@ public class TotalPopulationService {
 	private TotalPopulationRepository totalPopulationRepository;
 	
 	public void insertPopulation() throws IOException {
-	
-List<TotalPopulation> totalPopulationList = new ArrayList<>();		
+
+		List<TotalPopulation> totalPopulationList = new ArrayList<>();		
 		
 		Path path = Paths.get("/Users/hwang-il-yeong/Downloads/population/");
 		Optional<Path> getPathFile =  Files.walk(path)
@@ -77,8 +77,6 @@ List<TotalPopulation> totalPopulationList = new ArrayList<>();
 			System.out.println("해당 파일이 경로에 없습니다.");
 
 		}
-		
+
 	}
-	
-	
 }
